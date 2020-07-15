@@ -8,13 +8,15 @@ standard:
   - au
 mlink: https://www.zemismart.com/zemismart-au-wifi-wall-push-light-switch-alexa-google-home-enable-smart-life-app-controlone-gang-two-gangs-three-gangs-p0163.html
 image: https://www.zemismart.com/u_file/1903/products/06/743965c8ea.jpg
-template: '{"NAME":"KS-811 Single","GPIO":[17,0,0,0,0,0,0,0,21,56,0,0,0],"FLAG":0,"BASE":18}' 
+template: '{"NAME":"KS-811 Single","GPIO":[17,0,0,0,0,0,0,0,21,157,0,0,0],"FLAG":0,"BASE":18}'
+template: '{"NAME":"KS-811 Single","GPIO":[17,0,0,0,0,0,0,0,21,158,0,0,0],"FLAG":0,"BASE":18}' 
 link: https://www.amazon.com/dp/B07P6VTVBM/
 link2: https://www.amazon.com.au/Zemismart-Compatible-Assistant-Incandescent-Required/dp/B07P6VTVBM
+link3: https://https://www.harveynorman.com.au/connect-smart-1-gang-wall-switch-white.html
 ---
 
 New from Factory (Feb '19) has patched firmware blocking Tuya-Convert
 
-Flash Instructions: Unscrew 4 screws on rear, use serial to flash. Hold Button 1 (main button) while booting to get into flash mode.
+Flash Instructions: Unscrew 4 screws on rear, use serial to flash. Connect IO0 to GND while booting to get into flash mode.
 
-
+Alternative template: Use 158 (LinkLEDi) for status LEDs to default off (off when relay off, still red when on), or 157 (LinkLED) for status LEDs to default on (blue when relay off, red when relay on).
